@@ -13,6 +13,12 @@ composeMultiplatform = "1.9.0"
 junit = "4.13.2"
 kotlin = "2.2.20"
 
+# ✨ Adaptive (stable untuk Android, bisa juga dipakai di KMP Android target)
+adaptive = "1.1.0"
+
+# ✨ Adaptive (JetBrains Compose Multiplatform preview alpha)
+adaptive-kmp = "1.2.0-alpha06"
+
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlin-testJunit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
@@ -24,6 +30,16 @@ androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "a
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
 androidx-lifecycle-viewmodelCompose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidx-lifecycle" }
 androidx-lifecycle-runtimeCompose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+
+# ✨ Adaptive Android
+adaptive-core = { module = "androidx.compose.material3.adaptive:adaptive", version.ref = "adaptive" }
+adaptive-layout = { module = "androidx.compose.material3.adaptive:adaptive-layout", version.ref = "adaptive" }
+adaptive-navigation = { module = "androidx.compose.material3.adaptive:adaptive-navigation", version.ref = "adaptive" }
+
+# ✨ Adaptive Compose Multiplatform (JetBrains preview alpha)
+adaptive-kmp-core = { module = "org.jetbrains.compose.material3.adaptive:adaptive", version.ref = "adaptive-kmp" }
+adaptive-kmp-layout = { module = "org.jetbrains.compose.material3.adaptive:adaptive-layout", version.ref = "adaptive-kmp" }
+adaptive-kmp-navigation = { module = "org.jetbrains.compose.material3.adaptive:adaptive-navigation", version.ref = "adaptive-kmp" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

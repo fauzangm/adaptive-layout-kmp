@@ -39,6 +39,9 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
+            implementation(libs.adaptive.kmp.core)
+            implementation(libs.adaptive.kmp.layout)
+            implementation(libs.adaptive.kmp.navigation)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
