@@ -1,0 +1,65 @@
+# === Gradle / build ===
+.gradle/
+**/build/
+build/
+.gradle
+.gradle-test-kit/
+gradle-app.setting
+
+# Gradle wrapper jars
+gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ / Android Studio
+/.idea/
+/*.iml
+*.ipr
+out/
+
+# Android
+/local.properties
+/captures/
+/.externalNativeBuild/
+/.cxx/
+/*.keystore
+**/build/
+
+# Kotlin/Java artifacts
+*.class
+*.jar
+*.war
+*.ear
+
+# KMP specific build folders
+**/androidApp/build/
+**/composeApp/build/
+**/shared/build/
+**/iosApp/build/
+
+# Xcode / iOS
+*.xcworkspace
+*.xcuserdata
+*.xcodeproj/project.xcworkspace
+Pods/
+Pods/**
+
+# macOS
+.DS_Store
+._*
+
+# Editor / temp files
+*.swp
+*~
+*.log
+tmp/
+.idea_modules/
+
+# JetBrains cache / test / local
+/.gradle/
+/.idea/
+*.iml
+
+# Keystore/secret files
+keystore.jks
+keystore.properties
+*.p12
+.env
